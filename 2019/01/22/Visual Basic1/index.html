@@ -703,21 +703,25 @@
 
 
 
-  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
-  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
-   <script type="text/javascript">
-        var gitalk = new Gitalk({
-          clientID: '568c17b22276b47b92f5',
-          clientSecret: '727e678ffc597b61a3563857a37bc62e37b32b99',
-          repo: 'alturet.github.io/life-note',
-          owner: '',
-          admin: [''],
-          id: location.pathname,
-          distractionFreeMode: ''
-        })
-        gitalk.render('gitalk-container')           
-       </script>
-
+    
+        
+        <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+        <script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+        <script type="text/javascript">
+            const gitalk = new Gitalk({
+            clientID: '568c17b22276b47b92f5',
+            clientSecret: '727e678ffc597b61a3563857a37bc62e37b32b99',
+            repo: 'alturet.github.io/life-note',
+            owner: 'AltureT',
+            admin: 'AltureT'.split(','),
+            pagerDirection: 'first',
+            id: md5(window.location.pathname),
+            distractionFreeMode: false
+            })
+            gitalk.render('gitalk-container')
+        </script>
+        
+    
 
   
 
