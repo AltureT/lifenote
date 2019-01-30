@@ -98,16 +98,16 @@
 
   <meta name="description" content="Visual Basic程序设计1-10题目1：输入三个整数x,y,z，请把这三个数由小到大输出。样例输入(3个Text文本框输入):">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Visual Basic程序设计1-10">
+<meta property="og:title" content="VisualBasic1-10">
 <meta property="og:url" content="https://alturet.github.io/2019/01/22/Visual Basic1/index.html">
 <meta property="og:site_name" content="罗中算法练习">
 <meta property="og:description" content="Visual Basic程序设计1-10题目1：输入三个整数x,y,z，请把这三个数由小到大输出。样例输入(3个Text文本框输入):">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D188/sign=bd421ef9d9a20cf44290fad74e084b0c/3b292df5e0fe992558f1f02e3da85edf8cb171cb.jpg">
 <meta property="og:image" content="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D85/sign=133021c1ca1349547a1ee561574e0a11/f636afc379310a55fef647b4b64543a98326109b.jpg">
-<meta property="og:updated_time" content="2019-01-30T04:55:47.742Z">
+<meta property="og:updated_time" content="2019-01-30T05:26:16.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Visual Basic程序设计1-10">
+<meta name="twitter:title" content="VisualBasic1-10">
 <meta name="twitter:description" content="Visual Basic程序设计1-10题目1：输入三个整数x,y,z，请把这三个数由小到大输出。样例输入(3个Text文本框输入):">
 <meta name="twitter:image" content="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D188/sign=bd421ef9d9a20cf44290fad74e084b0c/3b292df5e0fe992558f1f02e3da85edf8cb171cb.jpg">
 
@@ -126,7 +126,7 @@
   };
 </script>
 
-  <title>Visual Basic程序设计1-10 | 罗中算法练习</title>
+  <title>VisualBasic1-10 | 罗中算法练习</title>
   
 
 
@@ -308,7 +308,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Visual Basic程序设计1-10
+          <h1 class="post-title" itemprop="name headline">VisualBasic1-10
 
               
             
@@ -351,7 +351,7 @@
                 
                   <span class="post-meta-item-text">Edited on</span>
                 
-                <time title="Modified: 2019-01-30 12:55:47" itemprop="dateModified" datetime="2019-01-30T12:55:47+08:00">2019-01-30</time>
+                <time title="Modified: 2019-01-30 13:26:16" itemprop="dateModified" datetime="2019-01-30T13:26:16+08:00">2019-01-30</time>
               
             
           </span>
@@ -360,18 +360,6 @@
 
           
             
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <a href="/life-note/2019/01/22/Visual Basic1/#comments" itemprop="discussionUrl">
-                  <span class="post-meta-item-text">Comments: </span> <span class="post-comments-count gitment-comments-count" data-xid="/life-note/2019/01/22/Visual Basic1/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -469,10 +457,7 @@
           
 
   
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
+    <div class="comments"  id="gitalk-container">
     </div>
 
   
@@ -712,44 +697,29 @@
 
 
   
-    <!-- LOCAL: You can save these files to your site and update links -->
+    
 
-  
-  <script src="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/gitmint.browser.js"></script>
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/theme-next/theme-next-gitment@1/default.css"/>
-<!-- END LOCAL -->
 
-<style>
-#gitment-container a {
-  border-bottom: none;
-}
 
-</style>
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css"/>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
 
 <script>
-  function renderGitment() {
-    var gitment = new Gitmint({
-      id: window.location.pathname,
-      owner: 'AltureT',
-      repo: 'life-note',
-      
-        lang: '' || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-      
-      oauth: {
-      
-      
-        client_secret: '727e678ffc597b61a3563857a37bc62e37b32b99',
-      
-        client_id: '568c17b22276b47b92f5'
-      }
-    });
-    gitment.render('gitment-container');
-  }
-
-  
-    renderGitment();
-  
+  var gitalk = new Gitalk({
+    clientID: '568c17b22276b47b92f5',
+    clientSecret: '727e678ffc597b61a3563857a37bc62e37b32b99',
+    repo: 'life-note',
+    owner: 'AltureT',
+    admin: ['Alture'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
 </script>
 
   
