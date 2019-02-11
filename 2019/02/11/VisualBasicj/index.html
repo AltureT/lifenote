@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lifenote/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/lifenote/css/main.css?v=6.7.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/lifenote/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/lifenote/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/lifenote/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/lifenote/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/lifenote/',
+    scheme: 'Mist',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="题目1：小明A+B描述:小明今年3岁了, 现在他已经能够认识100以内的非负整数, 并且能够进行100以内的非负整数的加法计算.对于大于等于100的整数, 小明仅保留该数的最后两位进行计算, 如果计算结果大于等于100, 那么小明也仅保留计算结果的最后两位. 例如, 对于小明来说:1) 1234和34是相等的2) 35+80=15 给定非负整数A和B, 你的任务是代表小明计算出A+B的值. 样例输">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Visual Basic程序设计91-100(题目已完成)">
+<meta property="og:url" content="https://alturet.github.io/lifenote/2019/02/11/VisualBasicj/index.html">
+<meta property="og:site_name" content="罗中算法练习">
+<meta property="og:description" content="题目1：小明A+B描述:小明今年3岁了, 现在他已经能够认识100以内的非负整数, 并且能够进行100以内的非负整数的加法计算.对于大于等于100的整数, 小明仅保留该数的最后两位进行计算, 如果计算结果大于等于100, 那么小明也仅保留计算结果的最后两位. 例如, 对于小明来说:1) 1234和34是相等的2) 35+80=15 给定非负整数A和B, 你的任务是代表小明计算出A+B的值. 样例输">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-02-11T06:37:25.671Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Visual Basic程序设计91-100(题目已完成)">
+<meta name="twitter:description" content="题目1：小明A+B描述:小明今年3岁了, 现在他已经能够认识100以内的非负整数, 并且能够进行100以内的非负整数的加法计算.对于大于等于100的整数, 小明仅保留该数的最后两位进行计算, 如果计算结果大于等于100, 那么小明也仅保留计算结果的最后两位. 例如, 对于小明来说:1) 1234和34是相等的2) 35+80=15 给定非负整数A和B, 你的任务是代表小明计算出A+B的值. 样例输">
+
+
+
+
+
+
+  <link rel="canonical" href="https://alturet.github.io/lifenote/2019/02/11/VisualBasicj/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Visual Basic程序设计91-100(题目已完成) | 罗中算法练习</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/lifenote/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">罗中算法练习</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/lifenote/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/lifenote/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://alturet.github.io/lifenote/lifenote/2019/02/11/VisualBasicj/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Alture"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/lifenote/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="罗中算法练习"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Visual Basic程序设计91-100(题目已完成)
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-02-11 13:58:21 / Modified: 14:37:25" itemprop="dateCreated datePublished" datetime="2019-02-11T13:58:21+08:00">2019-02-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="题目1：小明A-B"><a href="#题目1：小明A-B" class="headerlink" title="题目1：小明A+B"></a>题目1：小明A+B</h2><h3 id="描述"><a href="#描述" class="headerlink" title="描述:"></a>描述:</h3><p>小明今年3岁了, 现在他已经能够认识100以内的非负整数, 并且能够进行100以内的非负整数的加法计算.<br>对于大于等于100的整数, 小明仅保留该数的最后两位进行计算, 如果计算结果大于等于100, 那么小明也仅保留计算结果的最后两位.</p>
+<p>例如, 对于小明来说:<br>1) 1234和34是相等的<br>2) 35+80=15</p>
+<p>给定非负整数A和B, 你的任务是代表小明计算出A+B的值.</p>
+<h3 id="样例输入-1个Text文本框输入两个非负整数A和B-A和B均在int型可表示的范围内"><a href="#样例输入-1个Text文本框输入两个非负整数A和B-A和B均在int型可表示的范围内" class="headerlink" title="样例输入(1个Text文本框输入两个非负整数A和B(A和B均在int型可表示的范围内).):"></a>样例输入(1个Text文本框输入两个非负整数A和B(A和B均在int型可表示的范围内).):</h3><p>35 80<br>15 1152</p>
+<h3 id="样例输出-1个Label输出小明A-B的结果"><a href="#样例输出-1个Label输出小明A-B的结果" class="headerlink" title="样例输出(1个Label输出小明A+B的结果.):"></a>样例输出(1个Label输出小明A+B的结果.):</h3><p>15<br>67</p>
+<h3 id="程序分析"><a href="#程序分析" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案："><a href="#答案：" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目2：养兔子"><a href="#题目2：养兔子" class="headerlink" title="题目2：养兔子"></a>题目2：养兔子</h2><h3 id="描述-1"><a href="#描述-1" class="headerlink" title="描述:"></a>描述:</h3><p>一对成熟的兔子每月能且只能产下一对小兔子，每次都生一公一母，每只小兔子的成熟期是一个月，而成熟后的第二个月才开始生小兔。某人领养了一对小兔子，一公一母，请问第N个月以后，他将会得到多少对兔子。</p>
+<h3 id="样例输入-1个Text文本框输入整数n-1≤n≤10-。"><a href="#样例输入-1个Text文本框输入整数n-1≤n≤10-。" class="headerlink" title="样例输入(1个Text文本框输入整数n(1≤n≤10)。):"></a>样例输入(1个Text文本框输入整数n(1≤n≤10)。):</h3><p>1<br>2</p>
+<h3 id="样例输出-1个Label输出第n个月有几对兔子-假设没有兔子死亡现象，而且是一夫一妻制-。"><a href="#样例输出-1个Label输出第n个月有几对兔子-假设没有兔子死亡现象，而且是一夫一妻制-。" class="headerlink" title="样例输出(1个Label输出第n个月有几对兔子(假设没有兔子死亡现象，而且是一夫一妻制)。):"></a>样例输出(1个Label输出第n个月有几对兔子(假设没有兔子死亡现象，而且是一夫一妻制)。):</h3><p>1<br>2</p>
+<h3 id="程序分析-1"><a href="#程序分析-1" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-1"><a href="#答案：-1" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目3：字符过滤"><a href="#题目3：字符过滤" class="headerlink" title="题目3：字符过滤"></a>题目3：字符过滤</h2><h3 id="描述-2"><a href="#描述-2" class="headerlink" title="描述:"></a>描述:</h3><p>输入一个字符串str和一个过滤字符串s（代表一个过滤表），将str中所有来自过滤表字符都滤除。</p>
+<h3 id="样例输入-text1文本框输入字符串str-text2输入过滤字符串s"><a href="#样例输入-text1文本框输入字符串str-text2输入过滤字符串s" class="headerlink" title="样例输入(text1文本框输入字符串str,text2输入过滤字符串s):"></a>样例输入(text1文本框输入字符串str,text2输入过滤字符串s):</h3><p>asfkka sfkk<br>ka</p>
+<h3 id="样例输出-1个Label输出滤除后的字符串。"><a href="#样例输出-1个Label输出滤除后的字符串。" class="headerlink" title="样例输出(1个Label输出滤除后的字符串。):"></a>样例输出(1个Label输出滤除后的字符串。):</h3><p>sf sf</p>
+<h3 id="程序分析-2"><a href="#程序分析-2" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-2"><a href="#答案：-2" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目4：奇偶分家"><a href="#题目4：奇偶分家" class="headerlink" title="题目4：奇偶分家"></a>题目4：奇偶分家</h2><h3 id="描述-3"><a href="#描述-3" class="headerlink" title="描述:"></a>描述:</h3><p>给定N个正整数，请统计奇数和偶数各有多少个？</p>
+<h3 id="样例输入-1个Text文本框输入N个正整数，以空格分隔。"><a href="#样例输入-1个Text文本框输入N个正整数，以空格分隔。" class="headerlink" title="样例输入(1个Text文本框输入N个正整数，以空格分隔。):"></a>样例输入(1个Text文本框输入N个正整数，以空格分隔。):</h3><p>88 74 101 26 15 0 34 22 77</p>
+<h3 id="样例输出-1个Label输出奇数的个数、偶数的个数-中间以1个空格分隔。"><a href="#样例输出-1个Label输出奇数的个数、偶数的个数-中间以1个空格分隔。" class="headerlink" title="样例输出(1个Label输出奇数的个数、偶数的个数,中间以1个空格分隔。):"></a>样例输出(1个Label输出奇数的个数、偶数的个数,中间以1个空格分隔。):</h3><p>3 6</p>
+<h3 id="程序分析-3"><a href="#程序分析-3" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-3"><a href="#答案：-3" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目5：统计1到N之间数字1的个数"><a href="#题目5：统计1到N之间数字1的个数" class="headerlink" title="题目5：统计1到N之间数字1的个数"></a>题目5：统计1到N之间数字1的个数</h2><h3 id="描述-4"><a href="#描述-4" class="headerlink" title="描述:"></a>描述:</h3><p>N为正整数，计算从1到N的所有整数中包含数字1的个数。比如，N=10，从1，2…10，包含有2个数字1。</p>
+<h3 id="样例输入-1个Text文本框输入数字N，其中1≤N≤9999。"><a href="#样例输入-1个Text文本框输入数字N，其中1≤N≤9999。" class="headerlink" title="样例输入(1个Text文本框输入数字N，其中1≤N≤9999。):"></a>样例输入(1个Text文本框输入数字N，其中1≤N≤9999。):</h3><p>9<br>10<br>11</p>
+<h3 id="样例输出-1个Label输出1到N所有整数中1的个数"><a href="#样例输出-1个Label输出1到N所有整数中1的个数" class="headerlink" title="样例输出(1个Label输出1到N所有整数中1的个数):"></a>样例输出(1个Label输出1到N所有整数中1的个数):</h3><p>1<br>2<br>4</p>
+<h3 id="程序分析-4"><a href="#程序分析-4" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-4"><a href="#答案：-4" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目6：完全平方数"><a href="#题目6：完全平方数" class="headerlink" title="题目6：完全平方数"></a>题目6：完全平方数</h2><h3 id="描述-5"><a href="#描述-5" class="headerlink" title="描述:"></a>描述:</h3><p>一个非负整数n是完全平方数当且仅当存在非负整数m，使得n=m<sup>2</sup><br>据说完全平方数具有某种神奇的力量，谁知道呢。<br>聪明的你一定想到了，这道题的任务就是编写一个程序，判断给定的n是否是完全平方数。</p>
+<h3 id="样例输入-1个Text文本框输入一个非负整数n-数据范围在long以内"><a href="#样例输入-1个Text文本框输入一个非负整数n-数据范围在long以内" class="headerlink" title="样例输入(1个Text文本框输入一个非负整数n,数据范围在long以内):"></a>样例输入(1个Text文本框输入一个非负整数n,数据范围在long以内):</h3><p>0<br>3<br>4</p>
+<h3 id="样例输出-1个Label输出-如果n是完全平方数则输出”Yes”，否则输出”No”"><a href="#样例输出-1个Label输出-如果n是完全平方数则输出”Yes”，否则输出”No”" class="headerlink" title="样例输出(1个Label输出,如果n是完全平方数则输出”Yes”，否则输出”No”):"></a>样例输出(1个Label输出,如果n是完全平方数则输出”Yes”，否则输出”No”):</h3><p>Yes<br>No<br>Yes</p>
+<h3 id="程序分析-5"><a href="#程序分析-5" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-5"><a href="#答案：-5" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目7：母牛的故事"><a href="#题目7：母牛的故事" class="headerlink" title="题目7：母牛的故事"></a>题目7：母牛的故事</h2><h3 id="描述-6"><a href="#描述-6" class="headerlink" title="描述:"></a>描述:</h3><p>有一头母牛，它每年年初生一头小母牛。每头小母牛从第四个年头开始，每年年初也生一头小母牛。请编程实现在第n年的时候，共有多少头母牛？</p>
+<h3 id="样例输入-1个Text文本框输入整数n-0-lt-n-lt-55-，n的含义如题目中描述。"><a href="#样例输入-1个Text文本框输入整数n-0-lt-n-lt-55-，n的含义如题目中描述。" class="headerlink" title="样例输入(1个Text文本框输入整数n(0&lt;n&lt;55)，n的含义如题目中描述。):"></a>样例输入(1个Text文本框输入整数n(0&lt;n&lt;55)，n的含义如题目中描述。):</h3><p>2<br>4<br>5</p>
+<h3 id="样例输出-1个Label输出在第n年的时候母牛的数量。"><a href="#样例输出-1个Label输出在第n年的时候母牛的数量。" class="headerlink" title="样例输出(1个Label输出在第n年的时候母牛的数量。):"></a>样例输出(1个Label输出在第n年的时候母牛的数量。):</h3><p>2<br>4<br>6</p>
+<h3 id="程序分析-6"><a href="#程序分析-6" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-6"><a href="#答案：-6" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目8：数列求和"><a href="#题目8：数列求和" class="headerlink" title="题目8：数列求和"></a>题目8：数列求和</h2><h3 id="描述-7"><a href="#描述-7" class="headerlink" title="描述:"></a>描述:</h3><p>求数列1 2 4 7 11 16 22……的前n个数之和。</p>
+<h3 id="样例输入-1个Text文本框输入一个整数n，0-lt-n-lt-100。"><a href="#样例输入-1个Text文本框输入一个整数n，0-lt-n-lt-100。" class="headerlink" title="样例输入(1个Text文本框输入一个整数n，0&lt;n&lt;100。):"></a>样例输入(1个Text文本框输入一个整数n，0&lt;n&lt;100。):</h3><p>3<br>4</p>
+<h3 id="样例输出-1个Label输出数列的前n个数之和。"><a href="#样例输出-1个Label输出数列的前n个数之和。" class="headerlink" title="样例输出(1个Label输出数列的前n个数之和。):"></a>样例输出(1个Label输出数列的前n个数之和。):</h3><p>7<br>14</p>
+<h3 id="程序分析-7"><a href="#程序分析-7" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-7"><a href="#答案：-7" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目9：小明撩妹"><a href="#题目9：小明撩妹" class="headerlink" title="题目9：小明撩妹"></a>题目9：小明撩妹</h2><h3 id="描述-8"><a href="#描述-8" class="headerlink" title="描述:"></a>描述:</h3><p>小明已经单身20年了，大学加入了ACM协会，想在协会里找个女朋友，可是ACM协会里的女孩子可不是一般的好撩啊，她们只允许男生用VB语言进行搭讪^.^；所以这就要看小明的VB语言水平了，现在小明VB语言的水平为n，女生的高冷程度为m; 现在要你求小明撩妹成功的概率P = n / (m + 88)。<br>为什么是这样算呢，因为我说的算(手动滑稽)！ </p>
+<h3 id="样例输入-2个Text文本框分别输入n，-m-0-≤-n-m-≤-88且n，m都为整数"><a href="#样例输入-2个Text文本框分别输入n，-m-0-≤-n-m-≤-88且n，m都为整数" class="headerlink" title="样例输入(2个Text文本框分别输入n， m(0 ≤ n, m ≤ 88且n，m都为整数)):"></a>样例输入(2个Text文本框分别输入n， m(0 ≤ n, m ≤ 88且n，m都为整数)):</h3><p>88 0<br>88 12</p>
+<h3 id="样例输出-1个Label输出P-结果保留两位小数-。"><a href="#样例输出-1个Label输出P-结果保留两位小数-。" class="headerlink" title="样例输出(1个Label输出P(结果保留两位小数)。):"></a>样例输出(1个Label输出P(结果保留两位小数)。):</h3><p>1.00<br>0.88</p>
+<h3 id="程序分析-8"><a href="#程序分析-8" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-8"><a href="#答案：-8" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目10：渊子赛马"><a href="#题目10：渊子赛马" class="headerlink" title="题目10：渊子赛马"></a>题目10：渊子赛马</h2><h3 id="描述-9"><a href="#描述-9" class="headerlink" title="描述:"></a>描述:</h3><p>赛马是一古老的游戏，早在公元前四世纪的中国，处在诸侯割据的状态，历史上称为“战国时期”。在魏国作官的孙膑，因为受到同僚庞涓的迫害，被齐国使臣救出后，到达齐国国都。<br>赛马是当时最受齐国贵族欢迎的娱乐项目。上至国王，下到大臣，常常以赛马取乐，并以重金赌输赢。田忌多次与国王及其他大臣赌输赢，屡赌屡输。一天他赛马又输了，回家后闷闷不乐。孙膑安慰他说：“下次有机会带我到马场看看，也许我能帮你。”<br>孙膑仔细观察后发现，田忌的马和其他人的马相差并不远，只是策略运用不当，以致失败。<br>比赛前田忌按照孙膑的主意，用上等马鞍将下等马装饰起来，冒充上等马，与齐王的上等马比赛。第二场比赛，还是按照孙膑的安排，田忌用自己的上等马与国王的中等马比赛，在一片喝彩中，只见田忌的马竟然冲到齐王的马前面，赢了第二场。关键的第三场，田忌的中等马和国王的下等马比赛，田忌的马又一次冲到国王的马前面，结果二比一，田忌赢了国王。<br>就是这么简单，现在渊子也来赛一赛马。假设每匹马都有恒定的速度，所以速度大的马一定比速度小的马先到终点（没有意外！！），不允许出现平局即两匹相同速度的马不能赛跑。最后谁赢的场数多于一半(不包括一半)，谁就是赢家(可能没有赢家)。渊子有N(1≤N≤1000)匹马参加比赛。对手的马的数量与渊子马的数量一样，并且知道所有的马的速度。聪明的你来预测一下这场世纪之战的结果，看看渊子能否赢得比赛。</p>
+<h3 id="样例输入-text1文本框输入渊子的N匹马的速度。text2输入对手的N匹马的速度。"><a href="#样例输入-text1文本框输入渊子的N匹马的速度。text2输入对手的N匹马的速度。" class="headerlink" title="样例输入(text1文本框输入渊子的N匹马的速度。text2输入对手的N匹马的速度。):"></a>样例输入(text1文本框输入渊子的N匹马的速度。text2输入对手的N匹马的速度。):</h3><p>2 3 3 4 5<br>1 2 3 4 5</p>
+<p>2 2 1 2<br>2 2 3 1</p>
+<h3 id="样例输出-1个Label输出-若通过聪明的你精心安排，如果渊子能赢得比赛，那么输出“YES”。-否则输出“NO”。"><a href="#样例输出-1个Label输出-若通过聪明的你精心安排，如果渊子能赢得比赛，那么输出“YES”。-否则输出“NO”。" class="headerlink" title="样例输出(1个Label输出,若通过聪明的你精心安排，如果渊子能赢得比赛，那么输出“YES”。 否则输出“NO”。):"></a>样例输出(1个Label输出,若通过聪明的你精心安排，如果渊子能赢得比赛，那么输出“YES”。 否则输出“NO”。):</h3><p>YES<br>NO</p>
+<h3 id="程序分析-9"><a href="#程序分析-9" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-9"><a href="#答案：-9" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/lifenote/2019/02/11/VisualBasici/" rel="next" title="Visual Basic程序设计81-90(题目已完成)">
+                <i class="fa fa-chevron-left"></i> Visual Basic程序设计81-90(题目已完成)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments"  id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Alture</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/lifenote/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目1：小明A-B"><span class="nav-number">1.</span> <span class="nav-text">题目1：小明A+B</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入两个非负整数A和B-A和B均在int型可表示的范围内"><span class="nav-number">1.2.</span> <span class="nav-text">样例输入(1个Text文本框输入两个非负整数A和B(A和B均在int型可表示的范围内).):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出小明A-B的结果"><span class="nav-number">1.3.</span> <span class="nav-text">样例输出(1个Label输出小明A+B的结果.):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析"><span class="nav-number">1.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案："><span class="nav-number">1.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目2：养兔子"><span class="nav-number">2.</span> <span class="nav-text">题目2：养兔子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-1"><span class="nav-number">2.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入整数n-1≤n≤10-。"><span class="nav-number">2.2.</span> <span class="nav-text">样例输入(1个Text文本框输入整数n(1≤n≤10)。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出第n个月有几对兔子-假设没有兔子死亡现象，而且是一夫一妻制-。"><span class="nav-number">2.3.</span> <span class="nav-text">样例输出(1个Label输出第n个月有几对兔子(假设没有兔子死亡现象，而且是一夫一妻制)。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-1"><span class="nav-number">2.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-1"><span class="nav-number">2.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目3：字符过滤"><span class="nav-number">3.</span> <span class="nav-text">题目3：字符过滤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-2"><span class="nav-number">3.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-text1文本框输入字符串str-text2输入过滤字符串s"><span class="nav-number">3.2.</span> <span class="nav-text">样例输入(text1文本框输入字符串str,text2输入过滤字符串s):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出滤除后的字符串。"><span class="nav-number">3.3.</span> <span class="nav-text">样例输出(1个Label输出滤除后的字符串。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-2"><span class="nav-number">3.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-2"><span class="nav-number">3.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目4：奇偶分家"><span class="nav-number">4.</span> <span class="nav-text">题目4：奇偶分家</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-3"><span class="nav-number">4.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入N个正整数，以空格分隔。"><span class="nav-number">4.2.</span> <span class="nav-text">样例输入(1个Text文本框输入N个正整数，以空格分隔。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出奇数的个数、偶数的个数-中间以1个空格分隔。"><span class="nav-number">4.3.</span> <span class="nav-text">样例输出(1个Label输出奇数的个数、偶数的个数,中间以1个空格分隔。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-3"><span class="nav-number">4.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-3"><span class="nav-number">4.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目5：统计1到N之间数字1的个数"><span class="nav-number">5.</span> <span class="nav-text">题目5：统计1到N之间数字1的个数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-4"><span class="nav-number">5.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入数字N，其中1≤N≤9999。"><span class="nav-number">5.2.</span> <span class="nav-text">样例输入(1个Text文本框输入数字N，其中1≤N≤9999。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出1到N所有整数中1的个数"><span class="nav-number">5.3.</span> <span class="nav-text">样例输出(1个Label输出1到N所有整数中1的个数):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-4"><span class="nav-number">5.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-4"><span class="nav-number">5.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目6：完全平方数"><span class="nav-number">6.</span> <span class="nav-text">题目6：完全平方数</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-5"><span class="nav-number">6.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入一个非负整数n-数据范围在long以内"><span class="nav-number">6.2.</span> <span class="nav-text">样例输入(1个Text文本框输入一个非负整数n,数据范围在long以内):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出-如果n是完全平方数则输出”Yes”，否则输出”No”"><span class="nav-number">6.3.</span> <span class="nav-text">样例输出(1个Label输出,如果n是完全平方数则输出”Yes”，否则输出”No”):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-5"><span class="nav-number">6.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-5"><span class="nav-number">6.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目7：母牛的故事"><span class="nav-number">7.</span> <span class="nav-text">题目7：母牛的故事</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-6"><span class="nav-number">7.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入整数n-0-lt-n-lt-55-，n的含义如题目中描述。"><span class="nav-number">7.2.</span> <span class="nav-text">样例输入(1个Text文本框输入整数n(0&lt;n&lt;55)，n的含义如题目中描述。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出在第n年的时候母牛的数量。"><span class="nav-number">7.3.</span> <span class="nav-text">样例输出(1个Label输出在第n年的时候母牛的数量。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-6"><span class="nav-number">7.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-6"><span class="nav-number">7.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目8：数列求和"><span class="nav-number">8.</span> <span class="nav-text">题目8：数列求和</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-7"><span class="nav-number">8.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入一个整数n，0-lt-n-lt-100。"><span class="nav-number">8.2.</span> <span class="nav-text">样例输入(1个Text文本框输入一个整数n，0&lt;n&lt;100。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出数列的前n个数之和。"><span class="nav-number">8.3.</span> <span class="nav-text">样例输出(1个Label输出数列的前n个数之和。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-7"><span class="nav-number">8.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-7"><span class="nav-number">8.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目9：小明撩妹"><span class="nav-number">9.</span> <span class="nav-text">题目9：小明撩妹</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-8"><span class="nav-number">9.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-2个Text文本框分别输入n，-m-0-≤-n-m-≤-88且n，m都为整数"><span class="nav-number">9.2.</span> <span class="nav-text">样例输入(2个Text文本框分别输入n， m(0 ≤ n, m ≤ 88且n，m都为整数)):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出P-结果保留两位小数-。"><span class="nav-number">9.3.</span> <span class="nav-text">样例输出(1个Label输出P(结果保留两位小数)。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-8"><span class="nav-number">9.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-8"><span class="nav-number">9.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目10：渊子赛马"><span class="nav-number">10.</span> <span class="nav-text">题目10：渊子赛马</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-9"><span class="nav-number">10.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-text1文本框输入渊子的N匹马的速度。text2输入对手的N匹马的速度。"><span class="nav-number">10.2.</span> <span class="nav-text">样例输入(text1文本框输入渊子的N匹马的速度。text2输入对手的N匹马的速度。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出-若通过聪明的你精心安排，如果渊子能赢得比赛，那么输出“YES”。-否则输出“NO”。"><span class="nav-number">10.3.</span> <span class="nav-text">样例输出(1个Label输出,若通过聪明的你精心安排，如果渊子能赢得比赛，那么输出“YES”。 否则输出“NO”。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-9"><span class="nav-number">10.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-9"><span class="nav-number">10.5.</span> <span class="nav-text">答案：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alture</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lifenote/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lifenote/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lifenote/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/lifenote/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/lifenote/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/lifenote/js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/lifenote/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/lifenote/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/lifenote/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css"/>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '568c17b22276b47b92f5',
+    clientSecret: '727e678ffc597b61a3563857a37bc62e37b32b99',
+    repo: 'lifenote',
+    owner: 'AltureT',
+    admin: ['AltureT'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

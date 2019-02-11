@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lifenote/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/lifenote/css/main.css?v=6.7.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/lifenote/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/lifenote/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/lifenote/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/lifenote/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/lifenote/',
+    scheme: 'Mist',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="题目1：最大公因子描述:给定正整数m和n，求它们的最大公因子。 样例输入(2个Text文本框输入正整数m和n组成，m和n最大不超过100):样例输出(1个Label输出m和n的最大公因子，每组数据占一行。):程序分析:公因子是一个数学概念，指的是能同时整除几个整数的整数，可以用辗转相除法算出。辗转相除法样例:123456 和 7890 的最大公因数是 6，这可由下列步骤看出： 答案：1234Pri">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Visual Basic程序设计81-90(题目已完成)">
+<meta property="og:url" content="https://alturet.github.io/lifenote/2019/02/11/VisualBasici/index.html">
+<meta property="og:site_name" content="罗中算法练习">
+<meta property="og:description" content="题目1：最大公因子描述:给定正整数m和n，求它们的最大公因子。 样例输入(2个Text文本框输入正整数m和n组成，m和n最大不超过100):样例输出(1个Label输出m和n的最大公因子，每组数据占一行。):程序分析:公因子是一个数学概念，指的是能同时整除几个整数的整数，可以用辗转相除法算出。辗转相除法样例:123456 和 7890 的最大公因数是 6，这可由下列步骤看出： 答案：1234Pri">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://alturet.github.io/lifenote/media/15498649422954.jpg">
+<meta property="og:updated_time" content="2019-02-11T06:18:53.325Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Visual Basic程序设计81-90(题目已完成)">
+<meta name="twitter:description" content="题目1：最大公因子描述:给定正整数m和n，求它们的最大公因子。 样例输入(2个Text文本框输入正整数m和n组成，m和n最大不超过100):样例输出(1个Label输出m和n的最大公因子，每组数据占一行。):程序分析:公因子是一个数学概念，指的是能同时整除几个整数的整数，可以用辗转相除法算出。辗转相除法样例:123456 和 7890 的最大公因数是 6，这可由下列步骤看出： 答案：1234Pri">
+<meta name="twitter:image" content="https://alturet.github.io/lifenote/media/15498649422954.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="https://alturet.github.io/lifenote/2019/02/11/VisualBasici/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Visual Basic程序设计81-90(题目已完成) | 罗中算法练习</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/lifenote/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">罗中算法练习</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/lifenote/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/lifenote/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives</a>
+
+  </li>
+
+      
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://alturet.github.io/lifenote/lifenote/2019/02/11/VisualBasici/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Alture"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/lifenote/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="罗中算法练习"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Visual Basic程序设计81-90(题目已完成)
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-02-11 13:56:28 / Modified: 14:18:53" itemprop="dateCreated datePublished" datetime="2019-02-11T13:56:28+08:00">2019-02-11</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="题目1：最大公因子"><a href="#题目1：最大公因子" class="headerlink" title="题目1：最大公因子"></a>题目1：最大公因子</h2><h3 id="描述"><a href="#描述" class="headerlink" title="描述:"></a>描述:</h3><p>给定正整数m和n，求它们的最大公因子。</p>
+<h3 id="样例输入-2个Text文本框输入正整数m和n组成，m和n最大不超过100"><a href="#样例输入-2个Text文本框输入正整数m和n组成，m和n最大不超过100" class="headerlink" title="样例输入(2个Text文本框输入正整数m和n组成，m和n最大不超过100):"></a>样例输入(2个Text文本框输入正整数m和n组成，m和n最大不超过100):</h3><h3 id="样例输出-1个Label输出m和n的最大公因子，每组数据占一行。"><a href="#样例输出-1个Label输出m和n的最大公因子，每组数据占一行。" class="headerlink" title="样例输出(1个Label输出m和n的最大公因子，每组数据占一行。):"></a>样例输出(1个Label输出m和n的最大公因子，每组数据占一行。):</h3><h3 id="程序分析"><a href="#程序分析" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>公因子是一个数学概念，指的是能同时整除几个整数的整数，可以用辗转相除法算出。<br>辗转相除法样例:123456 和 7890 的最大公因数是 6，这可由下列步骤看出：<br><img src="/lifenote/media/15498649422954.jpg" alt=""></p>
+<h3 id="答案："><a href="#答案：" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目2：三角形"><a href="#题目2：三角形" class="headerlink" title="题目2：三角形"></a>题目2：三角形</h2><h3 id="描述-1"><a href="#描述-1" class="headerlink" title="描述:"></a>描述:</h3><p>给定三条边，请你判断一下能不能组成一个三角形。</p>
+<h3 id="样例输入-3个Text文本框输入三个正数A-B-C。其中A-B-C-lt-1000"><a href="#样例输入-3个Text文本框输入三个正数A-B-C。其中A-B-C-lt-1000" class="headerlink" title="样例输入(3个Text文本框输入三个正数A,B,C。其中A,B,C &lt;1000;):"></a>样例输入(3个Text文本框输入三个正数A,B,C。其中A,B,C &lt;1000;):</h3><p>1 2 3<br>2 2 2</p>
+<h3 id="样例输出-1个Label输出-如果三条边长A-B-C能组成三角形的话，输出YES，否则NO。"><a href="#样例输出-1个Label输出-如果三条边长A-B-C能组成三角形的话，输出YES，否则NO。" class="headerlink" title="样例输出(1个Label输出,如果三条边长A,B,C能组成三角形的话，输出YES，否则NO。):"></a>样例输出(1个Label输出,如果三条边长A,B,C能组成三角形的话，输出YES，否则NO。):</h3><p>NO<br>YES</p>
+<h3 id="程序分析-1"><a href="#程序分析-1" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-1"><a href="#答案：-1" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目3：第几天"><a href="#题目3：第几天" class="headerlink" title="题目3：第几天"></a>题目3：第几天</h2><h3 id="描述-2"><a href="#描述-2" class="headerlink" title="描述:"></a>描述:</h3><p>给定一个日期，输出这个日期是该年的第几天。</p>
+<h3 id="样例输入-1个Text文本框输入日期-数据格式为YYYY-MM-DD组成"><a href="#样例输入-1个Text文本框输入日期-数据格式为YYYY-MM-DD组成" class="headerlink" title="样例输入(1个Text文本框输入日期,数据格式为YYYY-MM-DD组成):"></a>样例输入(1个Text文本框输入日期,数据格式为YYYY-MM-DD组成):</h3><p>2000-01-01</p>
+<h3 id="样例输出-1个Label输出该日期是该年的第几天。"><a href="#样例输出-1个Label输出该日期是该年的第几天。" class="headerlink" title="样例输出(1个Label输出该日期是该年的第几天。):"></a>样例输出(1个Label输出该日期是该年的第几天。):</h3><p>1</p>
+<h3 id="程序分析-2"><a href="#程序分析-2" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-2"><a href="#答案：-2" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目4：童年生活二三事"><a href="#题目4：童年生活二三事" class="headerlink" title="题目4：童年生活二三事"></a>题目4：童年生活二三事</h2><h3 id="描述-3"><a href="#描述-3" class="headerlink" title="描述:"></a>描述:</h3><p>Redraiment小时候走路喜欢蹦蹦跳跳，他最喜欢在楼梯上跳来跳去。<br>但年幼的他一次只能走上一阶或者一下子蹦上两阶。<br>现在一共有N阶台阶，请你计算一下Redraiment从第0阶到第N阶共有几种走法。</p>
+<h3 id="样例输入-1个Text文本框输入N阶-1≤N≤40-。"><a href="#样例输入-1个Text文本框输入N阶-1≤N≤40-。" class="headerlink" title="样例输入(1个Text文本框输入N阶(1≤N≤40)。):"></a>样例输入(1个Text文本框输入N阶(1≤N≤40)。):</h3><p>1<br>2</p>
+<h3 id="样例输出-1个Label输出到达第n阶不同走法的数量。"><a href="#样例输出-1个Label输出到达第n阶不同走法的数量。" class="headerlink" title="样例输出(1个Label输出到达第n阶不同走法的数量。):"></a>样例输出(1个Label输出到达第n阶不同走法的数量。):</h3><p>1<br>2</p>
+<h3 id="程序分析-3"><a href="#程序分析-3" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-3"><a href="#答案：-3" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目5：汉诺塔"><a href="#题目5：汉诺塔" class="headerlink" title="题目5：汉诺塔"></a>题目5：汉诺塔</h2><h3 id="描述-4"><a href="#描述-4" class="headerlink" title="描述:"></a>描述:</h3><p>汉诺塔（又称河内塔）问题是印度的一个古老的传说。开天辟地的神勃拉玛在一个庙里留下了三根金刚石的棒A、B和C，A上面套着n个圆的金片， 最大的一个在底下，其余一个比一个小，依次叠上去， 庙里的众僧不倦地把它们一个个地从A棒搬到C棒上，规定可利用中间的一根B棒作为帮助， 但每次只能搬一个， 而且大的不能放在小的上面。 僧侣们搬得汗流满面，可惜当n很大时这辈子恐怕就很搬了<br>聪明的你还有计算机帮你完成，你能写一个程序帮助僧侣们完成这辈子的夙愿吗？</p>
+<h3 id="样例输入-1个Text文本框输入金片的个数n。这里的n-lt-10。"><a href="#样例输入-1个Text文本框输入金片的个数n。这里的n-lt-10。" class="headerlink" title="样例输入(1个Text文本框输入金片的个数n。这里的n&lt;=10。):"></a>样例输入(1个Text文本框输入金片的个数n。这里的n&lt;=10。):</h3><p>2</p>
+<h3 id="样例输出-1个Label输出搬动金片的全过程。格式见样例"><a href="#样例输出-1个Label输出搬动金片的全过程。格式见样例" class="headerlink" title="样例输出(1个Label输出搬动金片的全过程。格式见样例):"></a>样例输出(1个Label输出搬动金片的全过程。格式见样例):</h3><p>Move disk 1 from A to B<br>Move disk 2 from A to C<br>Move disk 1 from B to C</p>
+<h3 id="程序分析-4"><a href="#程序分析-4" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-4"><a href="#答案：-4" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目6：元素的删除"><a href="#题目6：元素的删除" class="headerlink" title="题目6：元素的删除"></a>题目6：元素的删除</h2><h3 id="描述-5"><a href="#描述-5" class="headerlink" title="描述:"></a>描述:</h3><p>陪同Mr.true和Eddy一同去面试的还有DavidDeng。<br>DavidDeng信心满满的去微软面试，一群面试者排起了长长的队伍，每个人有张面试编号。<br>这时，一位大美女KZ从他身边走过，DavidDeng对其一见钟情，DavidDeng拿起他的面试编号N就离开了面试队伍。</p>
+<h3 id="样例输入-Text1输入以空格隔开的整数，即原队伍中每个人的面试编号；text2输入DavidDeng的面试编号N。"><a href="#样例输入-Text1输入以空格隔开的整数，即原队伍中每个人的面试编号；text2输入DavidDeng的面试编号N。" class="headerlink" title="样例输入(Text1输入以空格隔开的整数，即原队伍中每个人的面试编号；text2输入DavidDeng的面试编号N。):"></a>样例输入(Text1输入以空格隔开的整数，即原队伍中每个人的面试编号；text2输入DavidDeng的面试编号N。):</h3><p>1 3 8 2<br>3</p>
+<h3 id="样例输出-1个Label输出"><a href="#样例输出-1个Label输出" class="headerlink" title="样例输出(1个Label输出):"></a>样例输出(1个Label输出):</h3><p>1 8 2</p>
+<h3 id="程序分析-5"><a href="#程序分析-5" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-5"><a href="#答案：-5" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目7：促销的价格"><a href="#题目7：促销的价格" class="headerlink" title="题目7：促销的价格"></a>题目7：促销的价格</h2><h3 id="描述-6"><a href="#描述-6" class="headerlink" title="描述:"></a>描述:</h3><p>某百货公司为了促销，采用购物打折的办法。<br>(1) 在1000元或以上者，按九五折优惠；<br>(2) 在2000元或以上者，按九折优惠；<br>(3) 在3000元或以上者，按八五折优惠；<br>(4) 在5000元或以上者，按八折优惠。 编写程序，输入购物款数，计算并输出优惠价。</p>
+<h3 id="样例输入-1个Text文本框输入正整数a，即购物款数。"><a href="#样例输入-1个Text文本框输入正整数a，即购物款数。" class="headerlink" title="样例输入(1个Text文本框输入正整数a，即购物款数。):"></a>样例输入(1个Text文本框输入正整数a，即购物款数。):</h3><p>2000<br>1550</p>
+<h3 id="样例输出-1个Label输出相应的优惠价格，要求保留一位小数。"><a href="#样例输出-1个Label输出相应的优惠价格，要求保留一位小数。" class="headerlink" title="样例输出(1个Label输出相应的优惠价格，要求保留一位小数。):"></a>样例输出(1个Label输出相应的优惠价格，要求保留一位小数。):</h3><p>1800.0<br>1472.5</p>
+<h3 id="程序分析-6"><a href="#程序分析-6" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-6"><a href="#答案：-6" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目8：英文金曲大赛"><a href="#题目8：英文金曲大赛" class="headerlink" title="题目8：英文金曲大赛"></a>题目8：英文金曲大赛</h2><h3 id="描述-7"><a href="#描述-7" class="headerlink" title="描述:"></a>描述:</h3><p>英语俱乐部举办了一个叫做“英文金曲大赛”的节目。这个节目有好多人参加，这不，成绩出来了，渊子当是很勇敢，自告奋勇接下了算出大家的总得分的任务。<br>当时有7个评委，每个评委都要给选手打分，现在要求去掉一个最高分和去掉一个最低分，再算出平均分。结果精确到小数点后两位。</p>
+<h3 id="样例输入-Text1输入7个实数，代表评委们对该选手的评分。Text2输入选手的名字"><a href="#样例输入-Text1输入7个实数，代表评委们对该选手的评分。Text2输入选手的名字" class="headerlink" title="样例输入(Text1输入7个实数，代表评委们对该选手的评分。Text2输入选手的名字):"></a>样例输入(Text1输入7个实数，代表评委们对该选手的评分。Text2输入选手的名字):</h3><p>10 10 10 10 10 10 9 xiaoyuanwang<br>0 0 0 0 0 0 0 beast</p>
+<h3 id="样例输出-1个Label输出选手名字和最终得分，结果保留两位小数。"><a href="#样例输出-1个Label输出选手名字和最终得分，结果保留两位小数。" class="headerlink" title="样例输出(1个Label输出选手名字和最终得分，结果保留两位小数。):"></a>样例输出(1个Label输出选手名字和最终得分，结果保留两位小数。):</h3><p>xiaoyuanwang 10.00<br>beast 0.00</p>
+<h3 id="程序分析-7"><a href="#程序分析-7" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-7"><a href="#答案：-7" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目9：简单密码破解"><a href="#题目9：简单密码破解" class="headerlink" title="题目9：简单密码破解"></a>题目9：简单密码破解</h2><h3 id="描述-8"><a href="#描述-8" class="headerlink" title="描述:"></a>描述:</h3><p>密码是我们生活中非常重要的东东，我们的那么一点不能说的秘密就全靠它了。哇哈哈.<br>接下来渊子要在密码之上再加一套密码，虽然简单但也安全。<br>假设渊子原来一个BBS上的密码为zvbo941987,为了方便记忆，他通过一种算法把这个密码变换成YUANzi1987，这个密码是他的名字和出生年份，怎么忘都忘不了，而且可以明目张胆地放在显眼的地方而不被别人知道真正的密码。<br>他是这么变换的，大家都知道手机上的字母： 1–1， abc–2, def–3, ghi–4, jkl–5, mno–6, pqrs–7, tuv–8 wxyz–9, 0–0,就这么简单，渊子把密码中出现的小写字母都变成对应的数字，数字和其他的符号都不做变换，声明：密码中没有空格，而密码中出现的大写字母则边成小写之后往后移一位，如：X，先变成小写，再往后移一位，不就是y了嘛，简单吧。记住，z往后移是a哦。</p>
+<h3 id="样例输入-1个Text文本框输入一个明文，密码长度不超过100个字符"><a href="#样例输入-1个Text文本框输入一个明文，密码长度不超过100个字符" class="headerlink" title="样例输入(1个Text文本框输入一个明文，密码长度不超过100个字符):"></a>样例输入(1个Text文本框输入一个明文，密码长度不超过100个字符):</h3><p>YUANzi1987</p>
+<h3 id="样例输出-1个Label输出渊子真正的密文。"><a href="#样例输出-1个Label输出渊子真正的密文。" class="headerlink" title="样例输出(1个Label输出渊子真正的密文。):"></a>样例输出(1个Label输出渊子真正的密文。):</h3><p>zvbo941987</p>
+<h3 id="程序分析-8"><a href="#程序分析-8" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-8"><a href="#答案：-8" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目10：数字回文"><a href="#题目10：数字回文" class="headerlink" title="题目10：数字回文"></a>题目10：数字回文</h2><h3 id="描述-9"><a href="#描述-9" class="headerlink" title="描述:"></a>描述:</h3><p>MM们都爱美，“回文”就是一种非常美的特殊的数或者文字短语，他们无论是顺读还是倒读，结果都一样。例如：12321， 55555，45554。如果GG们动不动来一段回文向MM们表达一下，准让MM们头脑发晕的爱上你，而作为MM们也要认准是非，以防鱼龙混水。你，聪明的PPMM，请读入一个5位整数，判断它是否是回文数。</p>
+<h3 id="样例输入-Text1文本框输入一个五位整数"><a href="#样例输入-Text1文本框输入一个五位整数" class="headerlink" title="样例输入(Text1文本框输入一个五位整数):"></a>样例输入(Text1文本框输入一个五位整数):</h3><p>12345<br>12321<br>11111</p>
+<h3 id="样例输出-如果输入数是回文数，输出“Yes-”-，否则输出-“No-”-。"><a href="#样例输出-如果输入数是回文数，输出“Yes-”-，否则输出-“No-”-。" class="headerlink" title="样例输出(如果输入数是回文数，输出“Yes.” ，否则输出 “No.” 。):"></a>样例输出(如果输入数是回文数，输出“Yes.” ，否则输出 “No.” 。):</h3><p>No.<br>Yes.<br>Yes.</p>
+<h3 id="程序分析-9"><a href="#程序分析-9" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-9"><a href="#答案：-9" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/lifenote/2019/02/11/VisualBasich/" rel="next" title="Visual Basic程序设计71-80(题目已完成)">
+                <i class="fa fa-chevron-left"></i> Visual Basic程序设计71-80(题目已完成)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/lifenote/2019/02/11/VisualBasicj/" rel="prev" title="Visual Basic程序设计91-100(题目已完成)">
+                Visual Basic程序设计91-100(题目已完成) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments"  id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Alture</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/lifenote/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目1：最大公因子"><span class="nav-number">1.</span> <span class="nav-text">题目1：最大公因子</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-2个Text文本框输入正整数m和n组成，m和n最大不超过100"><span class="nav-number">1.2.</span> <span class="nav-text">样例输入(2个Text文本框输入正整数m和n组成，m和n最大不超过100):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出m和n的最大公因子，每组数据占一行。"><span class="nav-number">1.3.</span> <span class="nav-text">样例输出(1个Label输出m和n的最大公因子，每组数据占一行。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析"><span class="nav-number">1.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案："><span class="nav-number">1.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目2：三角形"><span class="nav-number">2.</span> <span class="nav-text">题目2：三角形</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-1"><span class="nav-number">2.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-3个Text文本框输入三个正数A-B-C。其中A-B-C-lt-1000"><span class="nav-number">2.2.</span> <span class="nav-text">样例输入(3个Text文本框输入三个正数A,B,C。其中A,B,C &lt;1000;):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出-如果三条边长A-B-C能组成三角形的话，输出YES，否则NO。"><span class="nav-number">2.3.</span> <span class="nav-text">样例输出(1个Label输出,如果三条边长A,B,C能组成三角形的话，输出YES，否则NO。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-1"><span class="nav-number">2.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-1"><span class="nav-number">2.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目3：第几天"><span class="nav-number">3.</span> <span class="nav-text">题目3：第几天</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-2"><span class="nav-number">3.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入日期-数据格式为YYYY-MM-DD组成"><span class="nav-number">3.2.</span> <span class="nav-text">样例输入(1个Text文本框输入日期,数据格式为YYYY-MM-DD组成):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出该日期是该年的第几天。"><span class="nav-number">3.3.</span> <span class="nav-text">样例输出(1个Label输出该日期是该年的第几天。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-2"><span class="nav-number">3.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-2"><span class="nav-number">3.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目4：童年生活二三事"><span class="nav-number">4.</span> <span class="nav-text">题目4：童年生活二三事</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-3"><span class="nav-number">4.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入N阶-1≤N≤40-。"><span class="nav-number">4.2.</span> <span class="nav-text">样例输入(1个Text文本框输入N阶(1≤N≤40)。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出到达第n阶不同走法的数量。"><span class="nav-number">4.3.</span> <span class="nav-text">样例输出(1个Label输出到达第n阶不同走法的数量。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-3"><span class="nav-number">4.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-3"><span class="nav-number">4.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目5：汉诺塔"><span class="nav-number">5.</span> <span class="nav-text">题目5：汉诺塔</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-4"><span class="nav-number">5.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入金片的个数n。这里的n-lt-10。"><span class="nav-number">5.2.</span> <span class="nav-text">样例输入(1个Text文本框输入金片的个数n。这里的n&lt;=10。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出搬动金片的全过程。格式见样例"><span class="nav-number">5.3.</span> <span class="nav-text">样例输出(1个Label输出搬动金片的全过程。格式见样例):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-4"><span class="nav-number">5.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-4"><span class="nav-number">5.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目6：元素的删除"><span class="nav-number">6.</span> <span class="nav-text">题目6：元素的删除</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-5"><span class="nav-number">6.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-Text1输入以空格隔开的整数，即原队伍中每个人的面试编号；text2输入DavidDeng的面试编号N。"><span class="nav-number">6.2.</span> <span class="nav-text">样例输入(Text1输入以空格隔开的整数，即原队伍中每个人的面试编号；text2输入DavidDeng的面试编号N。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出"><span class="nav-number">6.3.</span> <span class="nav-text">样例输出(1个Label输出):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-5"><span class="nav-number">6.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-5"><span class="nav-number">6.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目7：促销的价格"><span class="nav-number">7.</span> <span class="nav-text">题目7：促销的价格</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-6"><span class="nav-number">7.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入正整数a，即购物款数。"><span class="nav-number">7.2.</span> <span class="nav-text">样例输入(1个Text文本框输入正整数a，即购物款数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出相应的优惠价格，要求保留一位小数。"><span class="nav-number">7.3.</span> <span class="nav-text">样例输出(1个Label输出相应的优惠价格，要求保留一位小数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-6"><span class="nav-number">7.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-6"><span class="nav-number">7.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目8：英文金曲大赛"><span class="nav-number">8.</span> <span class="nav-text">题目8：英文金曲大赛</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-7"><span class="nav-number">8.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-Text1输入7个实数，代表评委们对该选手的评分。Text2输入选手的名字"><span class="nav-number">8.2.</span> <span class="nav-text">样例输入(Text1输入7个实数，代表评委们对该选手的评分。Text2输入选手的名字):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出选手名字和最终得分，结果保留两位小数。"><span class="nav-number">8.3.</span> <span class="nav-text">样例输出(1个Label输出选手名字和最终得分，结果保留两位小数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-7"><span class="nav-number">8.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-7"><span class="nav-number">8.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目9：简单密码破解"><span class="nav-number">9.</span> <span class="nav-text">题目9：简单密码破解</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-8"><span class="nav-number">9.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入一个明文，密码长度不超过100个字符"><span class="nav-number">9.2.</span> <span class="nav-text">样例输入(1个Text文本框输入一个明文，密码长度不超过100个字符):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出渊子真正的密文。"><span class="nav-number">9.3.</span> <span class="nav-text">样例输出(1个Label输出渊子真正的密文。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-8"><span class="nav-number">9.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-8"><span class="nav-number">9.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目10：数字回文"><span class="nav-number">10.</span> <span class="nav-text">题目10：数字回文</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-9"><span class="nav-number">10.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-Text1文本框输入一个五位整数"><span class="nav-number">10.2.</span> <span class="nav-text">样例输入(Text1文本框输入一个五位整数):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-如果输入数是回文数，输出“Yes-”-，否则输出-“No-”-。"><span class="nav-number">10.3.</span> <span class="nav-text">样例输出(如果输入数是回文数，输出“Yes.” ，否则输出 “No.” 。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-9"><span class="nav-number">10.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-9"><span class="nav-number">10.5.</span> <span class="nav-text">答案：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alture</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lifenote/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lifenote/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lifenote/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/lifenote/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/lifenote/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/lifenote/js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/lifenote/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/lifenote/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/lifenote/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css"/>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '568c17b22276b47b92f5',
+    clientSecret: '727e678ffc597b61a3563857a37bc62e37b32b99',
+    repo: 'lifenote',
+    owner: 'AltureT',
+    admin: ['AltureT'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
