@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<html class="theme-next mist use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2"/>
+<meta name="theme-color" content="#222"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/lifenote/lib/font-awesome/css/font-awesome.min.css?v=4.6.2"/>
+
+<link rel="stylesheet" href="/lifenote/css/main.css?v=6.7.0"/>
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/lifenote/images/apple-touch-icon-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/lifenote/images/favicon-32x32-next.png?v=6.7.0">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/lifenote/images/favicon-16x16-next.png?v=6.7.0">
+
+
+  <link rel="mask-icon" href="/lifenote/images/logo.svg?v=6.7.0" color="#222">
+
+
+
+
+
+
+
+<script id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/lifenote/',
+    scheme: 'Mist',
+    version: '6.7.0',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: false,
+    fastclick: false,
+    lazyload: false,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+  
+
+
+
+
+  <meta name="description" content="题目1：圆的直径、周长和面积描述:要求读入一个圆的半径，并打印圆的直径、周长和面积。PI的取常量3.1415926。 样例输入(1个Text文本框输入一个double类型的数表示半径。):1 样例输出(1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。):2.00 6.28 3.14 程序分析:略 答案：1234Private sub Command1_Clic">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Visual Basic程序设计51-60(题目已完成)">
+<meta property="og:url" content="https://alturet.github.io/lifenote/2019/02/10/VisualBasicf/index.html">
+<meta property="og:site_name" content="罗中算法练习">
+<meta property="og:description" content="题目1：圆的直径、周长和面积描述:要求读入一个圆的半径，并打印圆的直径、周长和面积。PI的取常量3.1415926。 样例输入(1个Text文本框输入一个double类型的数表示半径。):1 样例输出(1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。):2.00 6.28 3.14 程序分析:略 答案：1234Private sub Command1_Clic">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D188/sign=bd421ef9d9a20cf44290fad74e084b0c/3b292df5e0fe992558f1f02e3da85edf8cb171cb.jpg">
+<meta property="og:image" content="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D85/sign=133021c1ca1349547a1ee561574e0a11/f636afc379310a55fef647b4b64543a98326109b.jpg">
+<meta property="og:updated_time" content="2019-05-08T06:14:54.088Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Visual Basic程序设计51-60(题目已完成)">
+<meta name="twitter:description" content="题目1：圆的直径、周长和面积描述:要求读入一个圆的半径，并打印圆的直径、周长和面积。PI的取常量3.1415926。 样例输入(1个Text文本框输入一个double类型的数表示半径。):1 样例输出(1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。):2.00 6.28 3.14 程序分析:略 答案：1234Private sub Command1_Clic">
+<meta name="twitter:image" content="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D188/sign=bd421ef9d9a20cf44290fad74e084b0c/3b292df5e0fe992558f1f02e3da85edf8cb171cb.jpg">
+
+
+
+
+
+
+  <link rel="canonical" href="https://alturet.github.io/lifenote/2019/02/10/VisualBasicf/"/>
+
+
+
+<script id="page.configurations">
+  CONFIG.page = {
+    sidebar: "",
+  };
+</script>
+
+  <title>Visual Basic程序设计51-60(题目已完成) | 罗中算法练习</title>
+  
+
+
+
+
+  <script async src="//www.googletagmanager.com/gtag/js?id=UA-134515795-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-134515795-1');
+  </script>
+
+
+
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .motion-element,
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-title { opacity: initial; }
+
+  .use-motion .logo,
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/lifenote/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">罗中算法练习</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+    
+    
+  </div>
+
+  <div class="site-nav-toggle">
+    <button aria-label="Toggle navigation bar">
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  
+    <ul id="menu" class="menu">
+      
+        
+        
+        
+          
+          <li class="menu-item menu-item-home">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/lifenote/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i> <br/>Home</a>
+
+  </li>
+        
+        
+        
+          
+          <li class="menu-item menu-item-archives">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/lifenote/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br/>Archives</a>
+
+  </li>
+
+      
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br/>Search</a>
+        </li>
+      
+    </ul>
+  
+
+  
+    
+
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+  
+
+
+
+</div>
+    </header>
+
+    
+
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://alturet.github.io/lifenote/lifenote/2019/02/10/VisualBasicf/"/>
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Alture"/>
+      <meta itemprop="description" content=""/>
+      <meta itemprop="image" content="/lifenote/images/avatar.gif"/>
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="罗中算法练习"/>
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Visual Basic程序设计51-60(题目已完成)
+
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+
+              
+                
+              
+
+              <time title="Created: 2019-02-10 00:06:00" itemprop="dateCreated datePublished" datetime="2019-02-10T00:06:00+08:00">2019-02-10</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-08 14:14:54" itemprop="dateModified" datetime="2019-05-08T14:14:54+08:00">2019-05-08</time>
+              
+            
+          </span>
+
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="题目1：圆的直径、周长和面积"><a href="#题目1：圆的直径、周长和面积" class="headerlink" title="题目1：圆的直径、周长和面积"></a>题目1：圆的直径、周长和面积</h2><h3 id="描述"><a href="#描述" class="headerlink" title="描述:"></a>描述:</h3><p>要求读入一个圆的半径，并打印圆的直径、周长和面积。PI的取常量3.1415926。</p>
+<h3 id="样例输入-1个Text文本框输入一个double类型的数表示半径。"><a href="#样例输入-1个Text文本框输入一个double类型的数表示半径。" class="headerlink" title="样例输入(1个Text文本框输入一个double类型的数表示半径。):"></a>样例输入(1个Text文本框输入一个double类型的数表示半径。):</h3><p>1</p>
+<h3 id="样例输出-1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。"><a href="#样例输出-1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。" class="headerlink" title="样例输出(1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。):"></a>样例输出(1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。):</h3><p>2.00 6.28 3.14</p>
+<h3 id="程序分析"><a href="#程序分析" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案："><a href="#答案：" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details> 
+
+<h2 id="题目2：字符统计"><a href="#题目2：字符统计" class="headerlink" title="题目2：字符统计"></a>题目2：字符统计</h2><h3 id="描述-1"><a href="#描述-1" class="headerlink" title="描述:"></a>描述:</h3><p>给出一串字符，要求统计出里面的字母、数字、空格以及其他字符的个数。<br>字母:A, B, …, Z、a, b, …, z组成<br>数字:0, 1, …, 9<br>空格:” “(不包括引号)<br>剩下的可打印字符全为其他字符。</p>
+<h3 id="样例输入-1个Text文本框输入字符串"><a href="#样例输入-1个Text文本框输入字符串" class="headerlink" title="样例输入(1个Text文本框输入字符串):"></a>样例输入(1个Text文本框输入字符串):</h3><p>A0 ,</p>
+<h3 id="样例输出-1个Label输出包括四个整数a-b-c-d，分别代表字母、数字、空格和其他字符的个数。"><a href="#样例输出-1个Label输出包括四个整数a-b-c-d，分别代表字母、数字、空格和其他字符的个数。" class="headerlink" title="样例输出(1个Label输出包括四个整数a b c d，分别代表字母、数字、空格和其他字符的个数。):"></a>样例输出(1个Label输出包括四个整数a b c d，分别代表字母、数字、空格和其他字符的个数。):</h3><p>1 1 1 1</p>
+<h3 id="程序分析-1"><a href="#程序分析-1" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-1"><a href="#答案：-1" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目3：数值统计"><a href="#题目3：数值统计" class="headerlink" title="题目3：数值统计"></a>题目3：数值统计</h2><h3 id="描述-2"><a href="#描述-2" class="headerlink" title="描述:"></a>描述:</h3><p>统计给定的n个数中，负数、零和正数的个数。</p>
+<h3 id="样例输入-1个Text文本框输入n个实数"><a href="#样例输入-1个Text文本框输入n个实数" class="headerlink" title="样例输入(1个Text文本框输入n个实数):"></a>样例输入(1个Text文本框输入n个实数):</h3><p>6 0 1 2 3 -1 0<br>5 1 2 3 4 0.5</p>
+<h3 id="样例输出-1个Label输出a-b和c，分别表示给定的数据中负数、零和正数的个数。"><a href="#样例输出-1个Label输出a-b和c，分别表示给定的数据中负数、零和正数的个数。" class="headerlink" title="样例输出(1个Label输出a,b和c，分别表示给定的数据中负数、零和正数的个数。):"></a>样例输出(1个Label输出a,b和c，分别表示给定的数据中负数、零和正数的个数。):</h3><p>1 2 3<br>0 0 5</p>
+<h3 id="程序分析-2"><a href="#程序分析-2" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-2"><a href="#答案：-2" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目4：两数组最短距离"><a href="#题目4：两数组最短距离" class="headerlink" title="题目4：两数组最短距离"></a>题目4：两数组最短距离</h2><h3 id="描述-3"><a href="#描述-3" class="headerlink" title="描述:"></a>描述:</h3><p>已知元素从小到大排列的两个数组x()和y()，请写出一个程序算出两个数组彼此之间差的绝对值中最小的一个，这叫做数组的距离。</p>
+<h3 id="样例输入-2个Text文本框分别输入两个数组的元素"><a href="#样例输入-2个Text文本框分别输入两个数组的元素" class="headerlink" title="样例输入(2个Text文本框分别输入两个数组的元素):"></a>样例输入(2个Text文本框分别输入两个数组的元素):</h3><p>1 2 3 4 5<br>6 7 8 9 10</p>
+<h3 id="样例输出-1个Label输出数组的最短距离。"><a href="#样例输出-1个Label输出数组的最短距离。" class="headerlink" title="样例输出(1个Label输出数组的最短距离。):"></a>样例输出(1个Label输出数组的最短距离。):</h3><p>1</p>
+<h3 id="程序分析-3"><a href="#程序分析-3" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>你能否找到最优的解法?以样例数据数量为例,让程序循环最多只有10次(此题有难度)</p>
+<h3 id="答案：-3"><a href="#答案：-3" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目5：求数列的和"><a href="#题目5：求数列的和" class="headerlink" title="题目5：求数列的和"></a>题目5：求数列的和</h2><h3 id="描述-4"><a href="#描述-4" class="headerlink" title="描述:"></a>描述:</h3><p>数列的定义如下：<br>数列的第一项为n，以后各项为前一项的平方根，求数列的前m项的和。</p>
+<h3 id="样例输入-2个Text文本框输入两个整数n（n-lt-10000）和m-m-lt-1000-组成，n和m的含义如前所述。"><a href="#样例输入-2个Text文本框输入两个整数n（n-lt-10000）和m-m-lt-1000-组成，n和m的含义如前所述。" class="headerlink" title="样例输入(2个Text文本框输入两个整数n（n&lt;10000）和m(m&lt;1000)组成，n和m的含义如前所述。):"></a>样例输入(2个Text文本框输入两个整数n（n&lt;10000）和m(m&lt;1000)组成，n和m的含义如前所述。):</h3><p>81 4<br>2 2</p>
+<h3 id="样例输出-1个Label输出该数列的和-要求精度保留2位小数。"><a href="#样例输出-1个Label输出该数列的和-要求精度保留2位小数。" class="headerlink" title="样例输出(1个Label输出该数列的和,要求精度保留2位小数。):"></a>样例输出(1个Label输出该数列的和,要求精度保留2位小数。):</h3><p>94.73<br>3.41</p>
+<h3 id="程序分析-4"><a href="#程序分析-4" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-4"><a href="#答案：-4" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目6：自然数的和之和"><a href="#题目6：自然数的和之和" class="headerlink" title="题目6：自然数的和之和"></a>题目6：自然数的和之和</h2><h3 id="描述-5"><a href="#描述-5" class="headerlink" title="描述:"></a>描述:</h3><p>计算S = 1+(1+2)+(1+2+3)+…+(1+2+…+N)。已知N，要求写程序求出S。</p>
+<h3 id="样例输入-1个Text文本框输入整数N，-1-lt-N-lt-200"><a href="#样例输入-1个Text文本框输入整数N，-1-lt-N-lt-200" class="headerlink" title="样例输入(1个Text文本框输入整数N， 1&lt;=N&lt;=200):"></a>样例输入(1个Text文本框输入整数N， 1&lt;=N&lt;=200):</h3><p>1<br>200</p>
+<h3 id="样例输出-1个Label输出一个整数，即此时S的值。"><a href="#样例输出-1个Label输出一个整数，即此时S的值。" class="headerlink" title="样例输出(1个Label输出一个整数，即此时S的值。):"></a>样例输出(1个Label输出一个整数，即此时S的值。):</h3><p>1<br>1353400</p>
+<h3 id="程序分析-5"><a href="#程序分析-5" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-5"><a href="#答案：-5" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目7：三角形面积"><a href="#题目7：三角形面积" class="headerlink" title="题目7：三角形面积"></a>题目7：三角形面积</h2><h3 id="描述-6"><a href="#描述-6" class="headerlink" title="描述:"></a>描述:</h3><p>给出三角形的三边的边长，求三角形的面积。</p>
+<h3 id="样例输入-3个Text文本框分别输入三边边长"><a href="#样例输入-3个Text文本框分别输入三边边长" class="headerlink" title="样例输入(3个Text文本框分别输入三边边长):"></a>样例输入(3个Text文本框分别输入三边边长):</h3><p>1 2 2.5<br>3 4 4.5<br>5 6 6.5</p>
+<h3 id="样例输出-1个Label输出输出三角形的面积。精确到三位小数。"><a href="#样例输出-1个Label输出输出三角形的面积。精确到三位小数。" class="headerlink" title="样例输出(1个Label输出输出三角形的面积。精确到三位小数。):"></a>样例输出(1个Label输出输出三角形的面积。精确到三位小数。):</h3><p>0.950<br>5.881<br>14.249</p>
+<h3 id="程序分析-6"><a href="#程序分析-6" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>海伦公式求三角形面积：<img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D188/sign=bd421ef9d9a20cf44290fad74e084b0c/3b292df5e0fe992558f1f02e3da85edf8cb171cb.jpg" alt=""><br>公式里的p为半周长（周长的一半）：<img src="https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/s%3D85/sign=133021c1ca1349547a1ee561574e0a11/f636afc379310a55fef647b4b64543a98326109b.jpg" alt=""></p>
+<h3 id="答案：-6"><a href="#答案：-6" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">    <span class="keyword">dim</span> a, b, c <span class="keyword">as</span> <span class="built_in">single</span></span><br><span class="line">    <span class="keyword">dim</span> s <span class="keyword">as</span> <span class="built_in">single</span> <span class="comment">'s存放面积,程序用到开方,会出现小数,所以需要用实数型</span></span><br><span class="line">    <span class="keyword">dim</span> p <span class="keyword">as</span> <span class="built_in">single</span> <span class="comment">'p存放半周长</span></span><br><span class="line">    a=val(text1.<span class="keyword">text</span>): b=val(text2.<span class="keyword">text</span>): c=val(text3.<span class="keyword">text</span>)</span><br><span class="line">    </span><br><span class="line">    p=(a+b+c)/<span class="number">2</span></span><br><span class="line">    s=sqr(p*(p-a)*(p-b)*(p-c))</span><br><span class="line">    s=format(<span class="built_in">cstr</span>(s),<span class="string">"0.000"</span>)</span><br><span class="line">    label1.caption=str(s)</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目8：计算球体积"><a href="#题目8：计算球体积" class="headerlink" title="题目8：计算球体积"></a>题目8：计算球体积</h2><h3 id="描述-7"><a href="#描述-7" class="headerlink" title="描述:"></a>描述:</h3><p>根据输入的半径值，计算球的体积。</p>
+<h3 id="样例输入-1个Text文本框输入一个实数，表示球的半径。"><a href="#样例输入-1个Text文本框输入一个实数，表示球的半径。" class="headerlink" title="样例输入(1个Text文本框输入一个实数，表示球的半径。):"></a>样例输入(1个Text文本框输入一个实数，表示球的半径。):</h3><p>1<br>1.5</p>
+<h3 id="样例输出-1个Label输出输出对应的球的体积，计算结果保留三位小数"><a href="#样例输出-1个Label输出输出对应的球的体积，计算结果保留三位小数" class="headerlink" title="样例输出(1个Label输出输出对应的球的体积，计算结果保留三位小数):"></a>样例输出(1个Label输出输出对应的球的体积，计算结果保留三位小数):</h3><p>4.189<br>14.137</p>
+<h3 id="程序分析-7"><a href="#程序分析-7" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>PI=3.1415927</p>
+<h3 id="答案：-7"><a href="#答案：-7" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目9：约瑟夫问题"><a href="#题目9：约瑟夫问题" class="headerlink" title="题目9：约瑟夫问题"></a>题目9：约瑟夫问题</h2><h3 id="描述-8"><a href="#描述-8" class="headerlink" title="描述:"></a>描述:</h3><p>n个人想玩残酷的死亡游戏，游戏规则如下：<br>n个人进行编号，分别从1到n，排成一个圈，顺时针从1开始数到m，数到m的人被杀，剩下的人继续游戏，活到最后的一个人是胜利者。请输出最后一个人的编号。</p>
+<h3 id="样例输入-2个Text文本框输入n和m值。1-lt-n-m-lt-150。"><a href="#样例输入-2个Text文本框输入n和m值。1-lt-n-m-lt-150。" class="headerlink" title="样例输入(2个Text文本框输入n和m值。1&lt;n,m&lt;150。):"></a>样例输入(2个Text文本框输入n和m值。1&lt;n,m&lt;150。):</h3><p>5 3</p>
+<h3 id="样例输出-1个Label输出胜利者的编号。"><a href="#样例输出-1个Label输出胜利者的编号。" class="headerlink" title="样例输出(1个Label输出胜利者的编号。):"></a>样例输出(1个Label输出胜利者的编号。):</h3><p>4</p>
+<h3 id="程序分析-8"><a href="#程序分析-8" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>第一轮：3被杀<br>第二轮：1被杀<br>第三轮：5被杀<br>第四轮：2被杀</p>
+<h3 id="答案：-8"><a href="#答案：-8" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+<h2 id="题目10：多项式求和"><a href="#题目10：多项式求和" class="headerlink" title="题目10：多项式求和"></a>题目10：多项式求和</h2><h3 id="描述-9"><a href="#描述-9" class="headerlink" title="描述:"></a>描述:</h3><p>多项式的描述如下：<br>1 - 1/2 + 1/3 - 1/4 + 1/5 - 1/6 + …<br>现在请你求出该多项式的前n项的和。</p>
+<h3 id="样例输入-1个Text文本框输入包含m个正整数-对于每一个整数-不妨设为n-n-lt-1000），求该多项式的前n项的和。"><a href="#样例输入-1个Text文本框输入包含m个正整数-对于每一个整数-不妨设为n-n-lt-1000），求该多项式的前n项的和。" class="headerlink" title="样例输入(1个Text文本框输入包含m个正整数,对于每一个整数(不妨设为n,n&lt;=1000），求该多项式的前n项的和。):"></a>样例输入(1个Text文本框输入包含m个正整数,对于每一个整数(不妨设为n,n&lt;=1000），求该多项式的前n项的和。):</h3><p>1 2</p>
+<h3 id="样例输出-1个Label输出多项式前n项的和，结果保留2位小数。"><a href="#样例输出-1个Label输出多项式前n项的和，结果保留2位小数。" class="headerlink" title="样例输出(1个Label输出多项式前n项的和，结果保留2位小数。):"></a>样例输出(1个Label输出多项式前n项的和，结果保留2位小数。):</h3><p>1.00<br>0.50</p>
+<h3 id="程序分析-9"><a href="#程序分析-9" class="headerlink" title="程序分析:"></a>程序分析:</h3><p>略</p>
+<h3 id="答案：-9"><a href="#答案：-9" class="headerlink" title="答案："></a>答案：</h3><details><br><figure class="highlight vb"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Private</span> <span class="keyword">sub</span> Command1_Click()</span><br><span class="line">        </span><br><span class="line">        label1.caption=result</span><br><span class="line"><span class="keyword">End</span> <span class="keyword">sub</span></span><br></pre></td></tr></table></figure><br><br></details>
+
+
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/lifenote/2019/02/10/VisualBasice/" rel="next" title="Visual Basic程序设计41-50">
+                <i class="fa fa-chevron-left"></i> Visual Basic程序设计41-50
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/lifenote/2019/02/10/VisualBasicg/" rel="prev" title="Visual Basic程序设计61-70(题目已完成)">
+                Visual Basic程序设计61-70(题目已完成) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+  </div>
+
+
+          </div>
+          
+
+  
+    <div class="comments"  id="gitalk-container">
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Alture</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          
+            <nav class="site-state motion-element">
+              
+                <div class="site-state-item site-state-posts">
+                
+                  <a href="/lifenote/archives/">
+                
+                    <span class="site-state-item-count">10</span>
+                    <span class="site-state-item-name">posts</span>
+                  </a>
+                </div>
+              
+
+              
+
+              
+            </nav>
+          
+
+          
+
+          
+
+          
+
+          
+          
+
+          
+            
+          
+          
+
+        </div>
+      </div>
+
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目1：圆的直径、周长和面积"><span class="nav-number">1.</span> <span class="nav-text">题目1：圆的直径、周长和面积</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述"><span class="nav-number">1.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入一个double类型的数表示半径。"><span class="nav-number">1.2.</span> <span class="nav-text">样例输入(1个Text文本框输入一个double类型的数表示半径。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。"><span class="nav-number">1.3.</span> <span class="nav-text">样例输出(1个Label输出分别为圆的直径、周长和面积，分别用空格隔开，要求精确到小数点后两位。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析"><span class="nav-number">1.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案："><span class="nav-number">1.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目2：字符统计"><span class="nav-number">2.</span> <span class="nav-text">题目2：字符统计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-1"><span class="nav-number">2.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入字符串"><span class="nav-number">2.2.</span> <span class="nav-text">样例输入(1个Text文本框输入字符串):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出包括四个整数a-b-c-d，分别代表字母、数字、空格和其他字符的个数。"><span class="nav-number">2.3.</span> <span class="nav-text">样例输出(1个Label输出包括四个整数a b c d，分别代表字母、数字、空格和其他字符的个数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-1"><span class="nav-number">2.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-1"><span class="nav-number">2.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目3：数值统计"><span class="nav-number">3.</span> <span class="nav-text">题目3：数值统计</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-2"><span class="nav-number">3.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入n个实数"><span class="nav-number">3.2.</span> <span class="nav-text">样例输入(1个Text文本框输入n个实数):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出a-b和c，分别表示给定的数据中负数、零和正数的个数。"><span class="nav-number">3.3.</span> <span class="nav-text">样例输出(1个Label输出a,b和c，分别表示给定的数据中负数、零和正数的个数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-2"><span class="nav-number">3.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-2"><span class="nav-number">3.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目4：两数组最短距离"><span class="nav-number">4.</span> <span class="nav-text">题目4：两数组最短距离</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-3"><span class="nav-number">4.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-2个Text文本框分别输入两个数组的元素"><span class="nav-number">4.2.</span> <span class="nav-text">样例输入(2个Text文本框分别输入两个数组的元素):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出数组的最短距离。"><span class="nav-number">4.3.</span> <span class="nav-text">样例输出(1个Label输出数组的最短距离。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-3"><span class="nav-number">4.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-3"><span class="nav-number">4.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目5：求数列的和"><span class="nav-number">5.</span> <span class="nav-text">题目5：求数列的和</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-4"><span class="nav-number">5.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-2个Text文本框输入两个整数n（n-lt-10000）和m-m-lt-1000-组成，n和m的含义如前所述。"><span class="nav-number">5.2.</span> <span class="nav-text">样例输入(2个Text文本框输入两个整数n（n&lt;10000）和m(m&lt;1000)组成，n和m的含义如前所述。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出该数列的和-要求精度保留2位小数。"><span class="nav-number">5.3.</span> <span class="nav-text">样例输出(1个Label输出该数列的和,要求精度保留2位小数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-4"><span class="nav-number">5.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-4"><span class="nav-number">5.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目6：自然数的和之和"><span class="nav-number">6.</span> <span class="nav-text">题目6：自然数的和之和</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-5"><span class="nav-number">6.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入整数N，-1-lt-N-lt-200"><span class="nav-number">6.2.</span> <span class="nav-text">样例输入(1个Text文本框输入整数N， 1&lt;=N&lt;=200):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出一个整数，即此时S的值。"><span class="nav-number">6.3.</span> <span class="nav-text">样例输出(1个Label输出一个整数，即此时S的值。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-5"><span class="nav-number">6.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-5"><span class="nav-number">6.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目7：三角形面积"><span class="nav-number">7.</span> <span class="nav-text">题目7：三角形面积</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-6"><span class="nav-number">7.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-3个Text文本框分别输入三边边长"><span class="nav-number">7.2.</span> <span class="nav-text">样例输入(3个Text文本框分别输入三边边长):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出输出三角形的面积。精确到三位小数。"><span class="nav-number">7.3.</span> <span class="nav-text">样例输出(1个Label输出输出三角形的面积。精确到三位小数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-6"><span class="nav-number">7.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-6"><span class="nav-number">7.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目8：计算球体积"><span class="nav-number">8.</span> <span class="nav-text">题目8：计算球体积</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-7"><span class="nav-number">8.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入一个实数，表示球的半径。"><span class="nav-number">8.2.</span> <span class="nav-text">样例输入(1个Text文本框输入一个实数，表示球的半径。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出输出对应的球的体积，计算结果保留三位小数"><span class="nav-number">8.3.</span> <span class="nav-text">样例输出(1个Label输出输出对应的球的体积，计算结果保留三位小数):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-7"><span class="nav-number">8.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-7"><span class="nav-number">8.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目9：约瑟夫问题"><span class="nav-number">9.</span> <span class="nav-text">题目9：约瑟夫问题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-8"><span class="nav-number">9.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-2个Text文本框输入n和m值。1-lt-n-m-lt-150。"><span class="nav-number">9.2.</span> <span class="nav-text">样例输入(2个Text文本框输入n和m值。1&lt;n,m&lt;150。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出胜利者的编号。"><span class="nav-number">9.3.</span> <span class="nav-text">样例输出(1个Label输出胜利者的编号。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-8"><span class="nav-number">9.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-8"><span class="nav-number">9.5.</span> <span class="nav-text">答案：</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#题目10：多项式求和"><span class="nav-number">10.</span> <span class="nav-text">题目10：多项式求和</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#描述-9"><span class="nav-number">10.1.</span> <span class="nav-text">描述:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输入-1个Text文本框输入包含m个正整数-对于每一个整数-不妨设为n-n-lt-1000），求该多项式的前n项的和。"><span class="nav-number">10.2.</span> <span class="nav-text">样例输入(1个Text文本框输入包含m个正整数,对于每一个整数(不妨设为n,n&lt;=1000），求该多项式的前n项的和。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#样例输出-1个Label输出多项式前n项的和，结果保留2位小数。"><span class="nav-number">10.3.</span> <span class="nav-text">样例输出(1个Label输出多项式前n项的和，结果保留2位小数。):</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#程序分析-9"><span class="nav-number">10.4.</span> <span class="nav-text">程序分析:</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#答案：-9"><span class="nav-number">10.5.</span> <span class="nav-text">答案：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love" id="animate">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Alture</span>
+
+  
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> v3.7.1</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v6.7.0</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+    
+
+    
+  </div>
+
+  
+
+<script>
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="/lifenote/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script src="/lifenote/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lifenote/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+
+  
+
+
+  <script src="/lifenote/js/src/utils.js?v=6.7.0"></script>
+
+  <script src="/lifenote/js/src/motion.js?v=6.7.0"></script>
+
+
+
+  
+  
+
+
+  <script src="/lifenote/js/src/schemes/muse.js?v=6.7.0"></script>
+
+
+
+
+  
+  <script src="/lifenote/js/src/scrollspy.js?v=6.7.0"></script>
+<script src="/lifenote/js/src/post-details.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  <script src="/lifenote/js/src/bootstrap.js?v=6.7.0"></script>
+
+
+
+  
+
+
+  
+    
+
+<script src="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+
+
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css"/>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/js-md5@0.7.3/src/md5.min.js"></script>
+
+<script>
+  var gitalk = new Gitalk({
+    clientID: '568c17b22276b47b92f5',
+    clientSecret: '727e678ffc597b61a3563857a37bc62e37b32b99',
+    repo: 'lifenote',
+    owner: 'AltureT',
+    admin: ['AltureT'],
+    id: md5(location.pathname),
+    distractionFreeMode: 'true'
+  });
+  gitalk.render('gitalk-container');
+</script>
+
+  
+
+
+  
+
+  <script>
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/lifenote/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url).replace(/\/{2,}/g, '/');
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x"></i></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x"></i></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
